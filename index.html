@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amin Charepoo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
+  <header>
+    <h1 class="name">Amin <span>Charepoo</span></h1>
+    <p class="tagline">Computer Engineering @ Northeastern University</p>
+    <div class="header-links">
+      <a href="mailto:charepoo.a@northeastern.edu">✉ charepoo.a@northeastern.edu</a>
+      <a href="https://www.linkedin.com/in/amin-charepoo/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/AminCharepoo" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <!-- ── NAV ───────────────────────────────────────────────── -->
+  <nav>
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#activities">Activities</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ── EDUCATION ─────────────────────────────────────────── -->
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <div class="edu-card">
+        <div class="row">
+          <span class="edu-school">Northeastern University</span>
+          <span class="date">Sept 2024 – May 2029</span>
+        </div>
+        <p class="edu-degree">B.S. Computer Engineering &nbsp;·&nbsp; Boston, MA</p>
+        <div class="badges">
+          <span class="badge">GPA 3.96</span>
+          <span class="badge">Dean's List</span>
+        </div>
+        <p class="edu-detail"><strong>Courses:</strong> Discrete Structures, Computing Fundamentals, Differential Equations &amp; Linear Algebra, Calculus 2</p>
+        <p class="edu-detail"><strong>Activities:</strong> Robotics Club, Virtual Reality Lab Assistant, VR Research, Northeastern Virtual Reality Club</p>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ─────────────────────────────────────────────── -->
+    <section id="skills" class="reveal">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-label">Programming</div>
+          <div class="tags">
+            <span class="tag">C++</span><span class="tag">Python</span>
+            <span class="tag">C#</span><span class="tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Web</div>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+            <span class="tag">React</span><span class="tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Embedded</div>
+          <div class="tags">
+            <span class="tag">ESP32</span><span class="tag">Arduino</span>
+            <span class="tag">Raspberry Pi</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Tools</div>
+          <div class="tags">
+            <span class="tag">Git</span><span class="tag">Unity3D</span>
+            <span class="tag">MATLAB</span><span class="tag">AutoCAD</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ───────────────────────────────────────────── -->
+    <!--
+      TO ADD A PROJECT: copy a <div class="project-card"> block below.
+      - Set the href on <a class="project-title"> to your GitHub repo URL.
+      - Update the <img class="project-img" src="images/yourphoto.jpg">.
+      - To skip the photo entirely: just delete the <img> line.
+    -->
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <img class="project-img" src="images/scheduler.jpg" alt="Real-Time Cooperative Task Scheduler" />
+          <div class="project-body">
+            <div class="row">
+              <a class="project-title" href="https://github.com/AminCharepoo" target="_blank">Real-Time Cooperative Task Scheduler</a>
+              <span class="date">Feb 2026 – Apr 2026</span>
+            </div>
+            <div class="project-tech">
+              <span class="tag">C++</span><span class="tag">Raspberry Pi Pico</span>
+              <span class="tag">Git</span><span class="tag">LaTeX</span>
+            </div>
+            <ul>
+              <li>Designed a priority-based task scheduler in C++ demonstrating OOP principles.</li>
+              <li>Programmed interrupt-driven architecture using GPIO and hardware timer ISRs with safe shared-state management.</li>
+              <li>Implemented five cooperating classes managing LCD display with VIP preemption and cooperative task resumption.</li>
+              <li>Wrote technical documentation in LaTeX covering system design, pseudocode, and implementation analysis.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img class="project-img" src="images/line-robot.jpg" alt="Autonomous Line-Following Robot" />
+          <div class="project-body">
+            <div class="row">
+              <a class="project-title" href="https://github.com/AminCharepoo" target="_blank">Autonomous Line-Following Robot</a>
+              <span class="date">Sept 2025 – Dec 2025</span>
+            </div>
+            <div class="project-tech">
+              <span class="tag">Arduino</span><span class="tag">C++</span>
+              <span class="tag">Sensors</span><span class="tag">Git</span>
+            </div>
+            <ul>
+              <li>Programmed an autonomous robot in Arduino C++ to process sensor data and control motors for accurate path-following.</li>
+              <li>Developed modular, maintainable code with real-time logic for reliable hardware-software integration.</li>
+              <li>Calibrated and tested multiple sensors to ensure responsive and repeatable performance.</li>
+              <li>Won first place in end-of-year competition against three teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img class="project-img" src="images/spotify-hub.jpg" alt="Spotify Controller Hub" />
+          <div class="project-body">
+            <div class="row">
+              <a class="project-title" href="https://github.com/AminCharepoo" target="_blank">Spotify Controller Hub</a>
+              <span class="date">Sept 2025 – Nov 2025</span>
+            </div>
+            <div class="project-tech">
+              <span class="tag">C++</span><span class="tag">ESP32</span>
+              <span class="tag">Git</span><span class="tag">Spotify API</span>
+            </div>
+            <ul>
+              <li>Designed and built an embedded controller that manages hardware inputs to control Spotify playback.</li>
+              <li>Programmed an ESP32 in C++ to handle Wi-Fi communication, API requests, and hardware input processing.</li>
+              <li>Created and tested circuit connections for reliable input handling and Wi-Fi connectivity.</li>
+              <li>Enabled seamless hands-free Spotify control, improving workflow efficiency.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ─────────────────────────────────────────── -->
+    <section id="experience" class="reveal">
+      <h2>Experience</h2>
+      <div class="exp-list">
+
+        <div class="exp-card">
+          <div class="row">
+            <span class="exp-org">Northeastern University — VR Experience Lab</span>
+            <span class="date">Jan 2025 – Aug 2025</span>
+          </div>
+          <p class="exp-role">Research Assistant &nbsp;·&nbsp; C# · Unity3D &nbsp;·&nbsp; Boston, MA</p>
+          <ul>
+            <li>Investigated how haptic and visual feedback interact in VR through user testing of a Unity3D simulation in C#.</li>
+            <li>Collaborated with a co-researcher to conduct 20+ participant sessions.</li>
+            <li>Analyzed findings and shared results with a team of 8 researchers.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="row">
+            <span class="exp-org">Northeastern University — VR Immersive Media Lab</span>
+            <span class="date">May 2025 – June 2025</span>
+          </div>
+          <p class="exp-role">Work Study Associate &nbsp;·&nbsp; C# · Git · Unity3D &nbsp;·&nbsp; Boston, MA</p>
+          <ul>
+            <li>Supported VR projects and assisted students and faculty with equipment setup and troubleshooting.</li>
+            <li>Collaborated with a team of three to develop a VR story experience in Unity3D using C#.</li>
+            <li>Managed version control and collaborative workflows through Git.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="row">
+            <span class="exp-org">TechHunt PCs</span>
+            <span class="date">Sept 2021 – Jan 2025</span>
+          </div>
+          <p class="exp-role">Business Owner &nbsp;·&nbsp; Boston, MA</p>
+          <ul>
+            <li>Founded and operated a small business specializing in building, repairing, and selling custom PCs.</li>
+            <li>Built and refurbished over 60 computer systems, ensuring reliable hardware performance.</li>
+            <li>Diagnosed hardware and software issues across diverse systems, earning 20+ five-star reviews.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── ACTIVITIES ──────────────────────────────────────────── -->
+    <section id="activities" class="reveal">
+      <h2>Activities &amp; Leadership</h2>
+      <div class="activity-list">
+        <div class="activity-item">
+          <p class="activity-role"><strong>Northeastern Robotics</strong> <span>— Intro to Robotics Teacher</span></p>
+          <span class="activity-years">2026 – Present</span>
+        </div>
+        <div class="activity-item">
+          <p class="activity-role"><strong>Northeastern Virtual Reality</strong> <span>— Executive Board, Project Lead</span></p>
+          <span class="activity-years">2024 – Present</span>
+        </div>
+        <div class="activity-item">
+          <p class="activity-role"><strong>Boston Ruhi Institute</strong> <span>— Volunteer Coordinator, Junior Youth Spiritual Empowerment Program</span></p>
+          <span class="activity-years">2018 – Present</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Amin Charepoo &nbsp;·&nbsp; <a href="https://github.com/AminCharepoo" target="_blank">github.com/AminCharepoo</a></p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
