@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+<!-- GitHub icon defined once, referenced from each project title via <use href="#github-icon">. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="github-icon" viewBox="0 0 16 16">
+    <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+  </symbol>
+</svg>
+
 <div class="page">
 
   <!-- ── HEADER ─────────────────────────────────────────────── -->
@@ -99,10 +107,13 @@
       <div class="projects-grid">
 
         <div class="project-card">
-          <img class="project-img" src="images/scheduler.jpg" alt="Real-Time Cooperative Task Scheduler" />
+          <img class="project-img" src="images/TaskScheduler.png" alt="Real-Time Cooperative Task Scheduler" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo" target="_blank">Real-Time Cooperative Task Scheduler</a>
+              <a class="project-title" href="https://github.com/AminCharepoo/Real-Time_Task_Scheduler" target="_blank">
+                <span>Real-Time Cooperative Task Scheduler</span>
+                <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
+              </a>
               <span class="date">Feb 2026 – Apr 2026</span>
             </div>
             <div class="project-tech">
@@ -119,10 +130,13 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img" src="images/line-robot.jpg" alt="Autonomous Line-Following Robot" />
+          <img class="project-img" src="images/AutonomousRobot.png" alt="Autonomous Line-Following Robot" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo" target="_blank">Autonomous Line-Following Robot</a>
+              <a class="project-title" href="https://github.com/AminCharepoo/Arduino-Line-Following-Robot" target="_blank">
+                <span>Autonomous Line-Following Robot</span>
+                <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
+              </a>
               <span class="date">Sept 2025 – Dec 2025</span>
             </div>
             <div class="project-tech">
@@ -139,10 +153,13 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img" src="images/spotify-hub.jpg" alt="Spotify Controller Hub" />
+          <img class="project-img" src="images/SpotifyController.png" alt="Spotify Controller Hub" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo" target="_blank">Spotify Controller Hub</a>
+              <a class="project-title" href="https://github.com/AminCharepoo/SpotifyController" target="_blank">
+                <span>Spotify Controller Hub</span>
+                <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
+              </a>
               <span class="date">Sept 2025 – Nov 2025</span>
             </div>
             <div class="project-tech">
@@ -168,10 +185,13 @@
 
         <div class="exp-card">
           <div class="row">
-            <span class="exp-org">Northeastern University — VR Experience Lab</span>
+            <span class="exp-org">VR Experience Lab — Northeastern University</span>
             <span class="date">Jan 2025 – Aug 2025</span>
           </div>
-          <p class="exp-role">Research Assistant &nbsp;·&nbsp; C# · Unity3D &nbsp;·&nbsp; Boston, MA</p>
+          <div class="row">
+            <p class="exp-role">Research Assistant &nbsp;·&nbsp; C# · Unity3D</p>
+            <span class="exp-location">Boston, MA</span>
+          </div>
           <ul>
             <li>Investigated how haptic and visual feedback interact in VR through user testing of a Unity3D simulation in C#.</li>
             <li>Collaborated with a co-researcher to conduct 20+ participant sessions.</li>
@@ -181,10 +201,13 @@
 
         <div class="exp-card">
           <div class="row">
-            <span class="exp-org">Northeastern University — VR Immersive Media Lab</span>
+            <span class="exp-org">VR Immersive Media Lab — Northeastern University</span>
             <span class="date">May 2025 – June 2025</span>
           </div>
-          <p class="exp-role">Work Study Associate &nbsp;·&nbsp; C# · Git · Unity3D &nbsp;·&nbsp; Boston, MA</p>
+          <div class="row">
+            <p class="exp-role">Work Study Associate &nbsp;·&nbsp; C# · Git · Unity3D</p>
+            <span class="exp-location">Boston, MA</span>
+          </div>
           <ul>
             <li>Supported VR projects and assisted students and faculty with equipment setup and troubleshooting.</li>
             <li>Collaborated with a team of three to develop a VR story experience in Unity3D using C#.</li>
@@ -197,7 +220,10 @@
             <span class="exp-org">TechHunt PCs</span>
             <span class="date">Sept 2021 – Jan 2025</span>
           </div>
-          <p class="exp-role">Business Owner &nbsp;·&nbsp; Boston, MA</p>
+          <div class="row">
+            <p class="exp-role">Business Owner</p>
+            <span class="exp-location">Boston, MA</span>
+          </div>
           <ul>
             <li>Founded and operated a small business specializing in building, repairing, and selling custom PCs.</li>
             <li>Built and refurbished over 60 computer systems, ensuring reliable hardware performance.</li>
