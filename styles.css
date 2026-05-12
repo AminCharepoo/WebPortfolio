@@ -254,10 +254,16 @@ h2::after {
 .project-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* fills the square-ish photo cell; switch to 'contain' to show the whole photo with padding */
+  object-fit: cover;       /* default: fills the photo cell, crops to fit */
   background: #0d1117;
   display: block;
   border-right: 1px solid #30363d;
+}
+
+/* Add class="project-img-stretch" on an <img> to stretch it to fill the slot
+   exactly (will distort aspect ratio, but no cropping and no dark padding). */
+.project-img.project-img-stretch {
+  object-fit: fill;
 }
 
 .project-body { padding: 20px 22px; }
