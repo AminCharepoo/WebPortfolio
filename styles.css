@@ -246,7 +246,8 @@ h2::after {
 
 /* When the card has a photo, use a side-by-side layout: photo left, content right.
    Cards without a <img class="project-img"> stay single-column automatically. */
-.project-card:has(.project-img) {
+.project-card:has(.project-img),
+.project-card:has(.project-img-stretch) {
   display: grid;
   grid-template-columns: 220px 1fr;
 }
@@ -285,6 +286,7 @@ h2::after {
   flex-shrink: 0;
   color: #8b949e;
   transition: color 0.2s, transform 0.2s;
+  vertical-align: -3px;
 }
 .project-title:hover .github-icon {
   color: #fff;
