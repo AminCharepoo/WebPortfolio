@@ -60,6 +60,23 @@ header {
   animation: fadeUp 0.7s ease both;
   margin-bottom: 0;
   padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.headshot {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #30363d;
+  flex-shrink: 0;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .name {
@@ -163,6 +180,7 @@ h2::after {
   border: 1px solid #30363d;
   border-radius: 8px;
   padding: 22px 26px;
+  position: relative;
 }
 
 .row {
@@ -173,7 +191,23 @@ h2::after {
   gap: 8px;
 }
 
-.edu-school { font-size: 17px; font-weight: 600; }
+.edu-school {
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+.edu-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  position: absolute;
+  top: 30%;
+  right: 300px;
+  transform: translateY(-50%);
+}
 .date { font-size: 13px; color: #8b949e; white-space: nowrap; }
 .edu-degree { color: #8b949e; font-size: 14px; margin-top: 4px; }
 
