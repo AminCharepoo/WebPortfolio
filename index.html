@@ -3,8 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amin Charepoo</title>
+  <title>Amin Charepoo — Computer Engineering @ Northeastern University</title>
+  <meta name="description" content="Amin Charepoo — Computer Engineering student at Northeastern University building embedded systems, real-time firmware, and VR. Projects in C++, ESP32, Raspberry Pi Pico, and Unity3D." />
+  <meta name="author" content="Amin Charepoo" />
+  <meta name="theme-color" content="#0d1117" />
+  <link rel="canonical" href="https://amincharepoo.github.io/WebPortfolio/" />
+
+  <!-- Link preview card (Slack, LinkedIn, iMessage, Google). Absolute URLs are required here. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Amin Charepoo — Computer Engineering @ Northeastern University" />
+  <meta property="og:description" content="Embedded systems, real-time firmware, and VR. Projects in C++, ESP32, Raspberry Pi Pico, and Unity3D." />
+  <meta property="og:url" content="https://amincharepoo.github.io/WebPortfolio/" />
+  <meta property="og:image" content="https://amincharepoo.github.io/WebPortfolio/images/headshot.jpg" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Marks JS as available before first paint, so the scroll-reveal rule only hides
+       sections when script.js can actually reveal them again. Without JS, everything
+       stays visible instead of rendering a blank page. -->
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -21,14 +40,14 @@
 <div class="page">
   <!-- ── HEADER ─────────────────────────────────────────────── -->
   <header>
-    <img class="headshot" src="images/headshot.jpg" alt="Amin Charepoo" />
+    <img class="headshot" src="images/headshot.jpg" alt="Amin Charepoo" width="130" height="130" fetchpriority="high" />
     <div class="header-text">
       <h1 class="name">Amin <span>Charepoo</span></h1>
       <p class="tagline">Computer Engineering @ Northeastern University</p>
       <div class="header-links">
         <a href="mailto:charepoo.a@northeastern.edu">✉ charepoo.a@northeastern.edu</a>
-        <a href="https://www.linkedin.com/in/amin-charepoo/" target="_blank"><svg class="github-icon" aria-hidden="true"><use href="#linkedin-icon"/></svg> LinkedIn</a>
-        <a href="https://github.com/AminCharepoo" target="_blank"> <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg> GitHub </a>
+        <a href="https://www.linkedin.com/in/amin-charepoo/" target="_blank" rel="noopener noreferrer"><svg class="github-icon" aria-hidden="true"><use href="#linkedin-icon"/></svg> LinkedIn</a>
+        <a href="https://github.com/AminCharepoo" target="_blank" rel="noopener noreferrer"> <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg> GitHub </a>
         <a href="Resume.pdf" download="Resume.pdf">⬇ Resume</a>
         <a href="Portfolio.pdf" download="Portfolio.pdf">⬇ Portfolio</a>
       </div>
@@ -55,7 +74,7 @@
         <div class="row">
           <span class="edu-school">
             Northeastern University
-            <img class="edu-logo" src="images/northeastern.png" alt="Northeastern University logo" />
+            <img class="edu-logo" src="images/northeastern.png" alt="Northeastern University logo" width="225" height="225" loading="lazy" />
           </span>
           <span class="date">Sept 2024 - May 2029</span>
         </div>
@@ -111,10 +130,10 @@
       <div class="projects-grid">
 
         <div class="project-card">
-          <img class="project-img" src="images/TaskScheduler.png" alt="Real-Time Cooperative Task Scheduler" />
+          <img class="project-img" src="images/TaskScheduler.jpg" alt="Real-Time Cooperative Task Scheduler" width="600" height="461" loading="lazy" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/Real-Time_Task_Scheduler" target="_blank">
+              <a class="project-title" href="https://github.com/AminCharepoo/Real-Time_Task_Scheduler" target="_blank" rel="noopener noreferrer">
                 <span>Real-Time Cooperative Task Scheduler</span>
                 <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
               </a>
@@ -134,10 +153,10 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img" src="images/AutonomousRobot.png" alt="Autonomous Line-Following Robot" />
+          <img class="project-img" src="images/AutonomousRobot.jpg" alt="Autonomous Line-Following Robot" width="600" height="800" loading="lazy" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/Arduino-Line-Following-Robot" target="_blank">
+              <a class="project-title" href="https://github.com/AminCharepoo/Arduino-Line-Following-Robot" target="_blank" rel="noopener noreferrer">
                 <span>Autonomous Line-Following Robot</span>
                 <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
               </a>
@@ -157,10 +176,10 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img" src="images/SpotifyController.png" alt="Spotify Controller Hub" />
+          <img class="project-img" src="images/SpotifyController.jpg" alt="Spotify Controller Hub" width="600" height="800" loading="lazy" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/SpotifyController" target="_blank">
+              <a class="project-title" href="https://github.com/AminCharepoo/SpotifyController" target="_blank" rel="noopener noreferrer">
                 <span>Spotify Controller Hub</span>
                 <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
               </a>
@@ -180,10 +199,10 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img" src="images/CarnivalGame.jpg" alt="Carnival Maze Game" />
+          <img class="project-img" src="images/CarnivalGame.jpg" alt="Carnival Maze Game" width="600" height="450" loading="lazy" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/Maze-Carnival-Game" target="_blank">
+              <a class="project-title" href="https://github.com/AminCharepoo/Maze-Carnival-Game" target="_blank" rel="noopener noreferrer">
                 <span>Carnival Maze Game</span>
                 <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
               </a>
@@ -203,10 +222,10 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img" src="images/StairLights.png" alt="Smart Stair Lights" />
+          <img class="project-img" src="images/StairLights.jpg" alt="Smart Stair Lights" width="600" height="800" loading="lazy" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/Stair-Lights" target="_blank">
+              <a class="project-title" href="https://github.com/AminCharepoo/Stair-Lights" target="_blank" rel="noopener noreferrer">
                 <span>Smart Stair Lights</span>
                 <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
               </a>
@@ -226,10 +245,10 @@
         </div>
 
         <div class="project-card">
-          <img class="project-img project-img-stretch" src="images/HydrationProject.png" alt="Gamified Hydration Tracker" />
+          <img class="project-img project-img-stretch" src="images/HydrationProject.jpg" alt="Gamified Hydration Tracker" width="586" height="636" loading="lazy" />
           <div class="project-body">
             <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/Gamified_Hydration" target="_blank">
+              <a class="project-title" href="https://github.com/AminCharepoo/Gamified_Hydration" target="_blank" rel="noopener noreferrer">
                 <span>Gamified Hydration Tracker</span>
                 <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
               </a>
@@ -328,7 +347,7 @@
   </main>
 
   <footer>
-    <p>Amin Charepoo &nbsp;·&nbsp; <a href="https://github.com/AminCharepoo" target="_blank">github.com/AminCharepoo</a></p>
+    <p>Amin Charepoo &nbsp;·&nbsp; <a href="https://github.com/AminCharepoo" target="_blank" rel="noopener noreferrer">github.com/AminCharepoo</a></p>
   </footer>
 </div>
 
