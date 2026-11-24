@@ -93,24 +93,20 @@
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-group">
+          <div class="skill-label">Embedded</div>
+          <div class="tags">
+            <span class="tag">ESP32</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">FPGA</span>
+            <span class="tag">Quartus</span>
+          </div>
+        </div>
+        <div class="skill-group">
           <div class="skill-label">Programming</div>
           <div class="tags">
             <span class="tag">C++</span><span class="tag">Python</span>
             <span class="tag">C#</span><span class="tag">Java</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-label">Web</div>
-          <div class="tags">
-            <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
-            <span class="tag">React</span><span class="tag">HTML/CSS</span>
-          </div>
-        </div>
-        <div class="skill-group">
-          <div class="skill-label">Embedded</div>
-          <div class="tags">
-            <span class="tag">ESP32</span><span class="tag">Arduino</span>
-            <span class="tag">Raspberry Pi</span>
           </div>
         </div>
         <div class="skill-group">
@@ -121,15 +117,57 @@
             <span class="tag">Linux</span>
           </div>
         </div>
+        <div class="skill-group">
+          <div class="skill-label">Web</div>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+            <span class="tag">React</span><span class="tag">HTML/CSS</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ── PROJECTS ───────────────────────────────────────────── -->
     <section id="projects" class="reveal">
       <h2>Projects</h2>
+
+      <!-- Filter tabs. Each button's data-filter matches a word in a card's data-tags.
+           "featured" and "all" are special. Tabs with no matching cards hide themselves. -->
+      <div class="project-tabs" role="tablist">
+        <button class="tab active" data-filter="featured">Featured</button>
+        <button class="tab" data-filter="embedded">Embedded</button>
+        <button class="tab" data-filter="robotics">Robotics</button>
+        <!-- <button class="tab" data-filter="vr">VR</button> -->
+        <button class="tab" data-filter="all">All</button>
+      </div>
+
       <div class="projects-grid">
 
-        <div class="project-card">
+        <!-- data-tags: space-separated categories. Add "featured" to show it on the Featured tab. -->
+        <div class="project-card" data-tags="featured embedded">
+          <img class="project-img" src="images/StairLights.jpg" alt="Smart Stair Lights" width="600" height="800" loading="lazy" />
+          <div class="project-body">
+            <div class="row">
+              <a class="project-title" href="https://github.com/AminCharepoo/Stair-Lights" target="_blank" rel="noopener noreferrer">
+                <span>Smart Stair Lights</span>
+                <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
+              </a>
+              <span class="date">Nov 2025 - Feb 2026</span>
+            </div>
+            <div class="project-tech">
+              <span class="tag">ESP32</span><span class="tag">C++</span>
+              <span class="tag">NeoPixel</span><span class="tag">HTML/CSS</span>
+            </div>
+            <ul>
+              <li>Built an ESP32-based smart stair lighting system with motion-activated wake, deep sleep power saving, and web-based RGB control.</li>
+              <li>Programmed deep sleep mode with PIR-sensor and manual button GPIO wake-up to maximize battery life, with user settings persisted in ESP32 non-volatile storage.</li>
+              <li>Created a local web interface for RGB color and brightness adjustment, removing the need for a proprietary app or cloud service.</li>
+              <li>Implemented OTA firmware updates via ArduinoOTA and automatic WiFi provisioning with a WiFiManager captive portal.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="project-card" data-tags="embedded">
           <img class="project-img" src="images/SpotifyController.jpg" alt="Spotify Controller Hub" width="600" height="800" loading="lazy" />
           <div class="project-body">
             <div class="row">
@@ -152,7 +190,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-tags="featured embedded">
           <img class="project-img" src="images/TaskScheduler.jpg" alt="Real-Time Cooperative Task Scheduler" width="600" height="461" loading="lazy" />
           <div class="project-body">
             <div class="row">
@@ -175,7 +213,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-tags="featured robotics">
           <img class="project-img" src="images/AutonomousRobot.jpg" alt="Autonomous Line-Following Robot" width="600" height="800" loading="lazy" />
           <div class="project-body">
             <div class="row">
@@ -198,7 +236,7 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-tags="embedded">
           <img class="project-img" src="images/CarnivalGame.jpg" alt="Carnival Maze Game" width="600" height="450" loading="lazy" />
           <div class="project-body">
             <div class="row">
@@ -221,30 +259,7 @@
           </div>
         </div>
 
-        <div class="project-card">
-          <img class="project-img" src="images/StairLights.jpg" alt="Smart Stair Lights" width="600" height="800" loading="lazy" />
-          <div class="project-body">
-            <div class="row">
-              <a class="project-title" href="https://github.com/AminCharepoo/Stair-Lights" target="_blank" rel="noopener noreferrer">
-                <span>Smart Stair Lights</span>
-                <svg class="github-icon" aria-hidden="true"><use href="#github-icon"/></svg>
-              </a>
-              <span class="date">Nov 2025 - Feb 2026</span>
-            </div>
-            <div class="project-tech">
-              <span class="tag">ESP32</span><span class="tag">C++</span>
-              <span class="tag">NeoPixel</span><span class="tag">HTML/CSS</span>
-            </div>
-            <ul>
-              <li>Built an ESP32-based smart stair lighting system with motion-activated wake, deep sleep power saving, and web-based RGB control.</li>
-              <li>Programmed deep sleep mode with PIR-sensor and manual button GPIO wake-up to maximize battery life, with user settings persisted in ESP32 non-volatile storage.</li>
-              <li>Created a local web interface for RGB color and brightness adjustment, removing the need for a proprietary app or cloud service.</li>
-              <li>Implemented OTA firmware updates via ArduinoOTA and automatic WiFi provisioning with a WiFiManager captive portal.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="project-card">
+        <div class="project-card" data-tags="embedded">
           <img class="project-img project-img-stretch" src="images/HydrationProject.jpg" alt="Gamified Hydration Tracker" width="586" height="636" loading="lazy" />
           <div class="project-body">
             <div class="row">
@@ -277,6 +292,21 @@
 
         <div class="exp-card">
           <div class="row">
+            <span class="exp-org">Northeastern First-Year Engineering Makerspace</span>
+            <span class="date">Sept 2026 - Present</span>
+          </div>
+          <div class="row">
+            <p class="exp-role">Red Vest &nbsp; | &nbsp; Python · Embedded Systems · CAD</p>
+            <span class="exp-location">Boston, MA</span>
+          </div>
+          <ul>
+            <li>Assist first-year engineering students with CAD, programming, circuit wiring, and woodworking projects.</li>
+            <li>Maintain and organize makerspace supplies and tools to ensure smooth operation for student use.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="row">
             <span class="exp-org">Northeastern University Robotics </span>
             <span class="date">Jan 2026 - Present</span>
           </div>
@@ -290,20 +320,7 @@
           </ul>
         </div>
         
-        <div class="exp-card">
-          <div class="row">
-            <span class="exp-org">Northeastern First-Year Engineering Makerspace</span>
-            <span class="date">Sept 2026 - Present</span>
-          </div>
-          <div class="row">
-            <p class="exp-role">Red Vest &nbsp; | &nbsp; Python · Embedded Systems · CAD</p>
-            <span class="exp-location">Boston, MA</span>
-          </div>
-          <ul>
-            <li>Assist first-year engineering students with CAD, programming, circuit wiring, and woodworking projects.</li>
-            <li>Maintain and organize makerspace supplies and tools to ensure smooth operation for student use.</li>
-          </ul>
-        </div>
+        
 
         <div class="exp-card">
           <div class="row">

@@ -1,3 +1,20 @@
+// Project filter tabs: show only cards whose data-tags include the chosen filter.
+// "all" shows every card.
+const tabs = document.querySelectorAll('.project-tabs .tab');
+const cards = document.querySelectorAll('.project-card');
+const matches = (card, filter) =>
+  filter === 'all' || (card.dataset.tags || '').split(' ').includes(filter);
+
+function filterProjects(filter) {
+  tabs.forEach(t => t.classList.toggle('active', t.dataset.filter === filter));
+  cards.forEach(c => { c.hidden = !matches(c, filter); });
+}
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => filterProjects(tab.dataset.filter));
+});
+filterProjects('featured');
+
 // Fade-in sections on scroll.
 //
 // Every .reveal section starts at opacity 0, so if this script fails to reveal
